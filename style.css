@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: local("Lato Hairline"), local("Lato-Hairline"), url("font/latoregular.woff2") format("woff2"), url("font/latoregular.woff") format("woff"), url("font/latoregular.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, Lato-Black, AdobeInvisFont, MyriadPro-Regular;
 }
@@ -13,7 +20,7 @@ body {
 }
 
 .text {
-  font-family: sans-serif;
+  font-family: Lato;
   font-size: 20px;
   color: black;
   text-decoration: none;
@@ -54,6 +61,15 @@ body {
   color: #222222;
 }
 
+.text_way {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #636363;
+}
+
 .red_logo_words {
   font-weight: 900;
   color: #f16d7f;
@@ -74,6 +90,34 @@ body {
 
 .h3 {
   font-size: 30px;
+}
+
+.h4 {
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+.h5 {
+  margin-bottom: 20px;
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+}
+
+.h6 {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
 }
 
 .browse {
@@ -328,6 +372,7 @@ body {
   padding: 20px;
   display: none;
   top: 45px;
+  z-index: 1;
 }
 
 .mega_box::before {
@@ -744,16 +789,6 @@ body {
   color: #fbfbfb;
 }
 
-.h5 {
-  margin-bottom: 20px;
-  font-family: Lato;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
-}
-
 .feedback {
   width: auto;
   margin: 0 auto;
@@ -897,15 +932,6 @@ body {
   color: #898989;
 }
 
-.h6 {
-  font-family: Lato;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #f16d7f;
-}
-
 .ul_type {
   list-style-type: none;
 }
@@ -977,5 +1003,176 @@ body {
 
 .b_b:hover {
   background-color: #F16D7F;
+}
+
+.new_arrivals {
+  height: 148px;
+  background-color: #f8f3f4;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 146px;
+}
+
+.checklist {
+  padding-left: 18px;
+  width: 243px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.Kiosk {
+  margin-top: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.category {
+  margin-right: 50px;
+}
+
+.checklist_text {
+  margin: auto 11px;
+}
+
+summary {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #636363;
+  display: block;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: '\25BC';
+  padding-right: 0.5em;
+  position: absolute;
+  left: 235px;
+  top: 10px;
+}
+
+details[open] > summary::after {
+  content: '\25B2';
+  color: #ef5b70;
+  position: absolute;
+  left: 235px;
+  top: 10px;
+}
+
+summary::before {
+  content: "";
+  padding-right: 0.5em;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 37px;
+  background-color: #ef5b70;
+}
+
+details[open] > summary::before {
+  content: "";
+  color: #ef5b70;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+details[open] > summary {
+  color: #ef5b70;
+}
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fill-available;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 130px;
+  width: 100%;
+}
+
+.h_settings {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+
+.settings_trend {
+  width: 33%;
+  max-width: 250px;
+}
+
+.trend_box {
+  margin-top: 25px;
+}
+
+.trend_box :last-of-type {
+  border: none;
+}
+
+.trend_a {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6f6e6e;
+  text-decoration: none;
+  border-right: 1px solid #dfdfdf;
+  padding: 5px;
+}
+
+.trend_a:hover {
+  color: #f16d7f;
+}
+
+.settings_size {
+  width: 33%;
+}
+
+.checkbox_size {
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+}
+
+.settings_price {
+  width: 33%;
 }
 /*# sourceMappingURL=style.css.map */
