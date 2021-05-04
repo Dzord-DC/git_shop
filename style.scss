@@ -385,6 +385,26 @@ margin-right: 0;
 }
 .parts_a{
     text-decoration: none;
+    display: block;
+}
+.parts_a:hover .part_men{
+    opacity: 0.8;
+    box-shadow: 0 0 8px #000;
+}
+.parts_a:hover .part_accesories{
+    opacity: 0.8;
+    box-shadow: 0 0 8px #000;
+
+}
+.parts_a:hover .part_women{
+    opacity: 0.8;
+    box-shadow: 0 0 8px #000;
+
+}
+.parts_a:hover .part_kids{
+    opacity: 0.8;
+    box-shadow: 0 0 8px #000;
+
 }
 .part_bacg{
     position: absolute;
@@ -928,9 +948,7 @@ font-weight: 700;
   .settings_size{
     width: 33%;
   }
-  .check_size{
-
-  }
+  //.check_size{
   .checkbox_size{
     width: 13px;
     height: 13px;
