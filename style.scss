@@ -455,13 +455,30 @@ text-align: center;
     justify-content: space-between;
 }
 .item_blok{
+    display: flex;
     margin: 10px;
     width: 261px;
     height: 356px;
+    position: relative;
 }
-.item_m{
+
+.item_cart{
+    display: block;
     text-decoration: none;
 }
+.item_blok:hover .choice_item{
+    display: flex;
+  }
+  .item_blok:hover {
+      box-shadow: 0 0 8px #646464;
+  }
+  .item_blok:hover .item_pic{
+    filter: brightness(50%);
+  }
+  .item_blok:hover .buttom_add{
+display: flex;
+  }
+  
 .picture{
     width: 261px;
     height: 280px;
@@ -470,28 +487,23 @@ text-align: center;
     justify-content: center;
     position: relative;
 }
-.choice_item{
-    width: 261px;
-    height: 280px;
-    background-color: rgba(58,56,56,0.83);
-    opacity: 0.7;
+
+.buttom_box{
     position: absolute;
-    z-index: 1;
-    display: none;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-.item_blok:hover .choice_item{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 30%;
+}
+.item_buttom_add{
+display: block;
+text-decoration: none;
 }
 .buttom_add{
     width: 123px;
     height: 39px;
-    background-color: rgba(58,56,56,0.83);
-    opacity: 0.7;
     border: 1px solid #FFFFFF;
-    display: flex;
+    display: none;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -512,13 +524,12 @@ text-align: center;
     color: #ffffff;
     padding: 4px;
 }
-.buttom_add:hover{
-    background-color: #FFFFFF;
-    color: #000;
+.item_buttom_add:hover{
+    //background-color: #FFFFFF;
+    //color: #000;
+    box-shadow: 0 0 8px #ffffff;
 }
-.buttom_add:hover .buttom_add_text{
-    color: #000;
-}
+
 .item_name{
     margin-top: 19px;
     font-family: Lato;
@@ -546,8 +557,25 @@ text-align: center;
     justify-content: center;
 }
 .browse_b{
+    display: flex;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
     width: 212px;
-height: 48px;
+    height: 48px;
+    text-decoration: none;
+    background-color: #F16D7F;
+    border: 0;
+    color: #FFFFFF;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.browse_b:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #F16D7F;
+    color:   #F16D7F;
 }
 .info{
     margin-bottom: 97px;
