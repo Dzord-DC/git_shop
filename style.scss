@@ -240,12 +240,24 @@ display: block;
     border-top: 1px solid #E8E8E8;
 }
 .my_account{
+    display: block;
     margin-top: 10px;
     width: 131px;
     height: 38px;
+    font-family: Lato;
     background-color: #F16D7F;
     border: 0;
     color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #F16D7F;
+    border-radius: 3px;
+    
+}
+.title{
+    line-height:38px;
+    margin:0;
+    text-align:center;
+     padding: 0;
 }
 .my_account:hover{
     background-color: #FFFFFF;
@@ -551,6 +563,7 @@ text-decoration: none;
 }
 
 .item_name{
+    margin-left: 8px;
     margin-top: 19px;
     font-family: Lato;
     font-size: 13px;
@@ -560,6 +573,7 @@ text-decoration: none;
     color: #222222;
 }
 .price{
+    margin-left: 8px;
     margin-top: 19px;
     font-family: Lato;
     font-size: 16px;
@@ -776,6 +790,7 @@ color: #898989;
     justify-content: space-between;
 }
 .fo_linc{
+    display: block;
     font-family: Lato;
 font-size: 16px;
 line-height: 59px;
@@ -839,12 +854,15 @@ color: #7a7a7a;
     border-bottom: 1px solid #e6e6e6;
     position: relative;
 }
+.checklist:hover{
+    box-shadow: 0 0 5px #222222;
+}
 .Kiosk{
     margin-top: 59px;
     display: flex;
 }
 .category{
-    margin-right: 50px;
+    margin-right: 35px;
 }
 .checklist_text{
     margin: auto 11px;
@@ -902,10 +920,23 @@ font-weight: 700;
   details[open] > summary{
       color: #ef5b70;
   }
+  .cat_linc{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #6f6e6e;
+    text-decoration: none;
+    display: block;
+  }
+  .cat_linc:hover{
+    color: #ef5b70;
+  }
 
   .showcase{
       display: flex;
       width: -webkit-fill-available;
+      flex-wrap: wrap;
     
   
   }
@@ -913,6 +944,7 @@ font-weight: 700;
       display: flex;
       height: 130px;
       width: 100%;
+      justify-content: space-between;
   }
   .h_settings{
     font-family: Lato;
@@ -958,4 +990,129 @@ font-weight: 700;
   .settings_price{
     width: 33%;
   }
+  .sort{
+      display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #f3f3f3;
+    align-items: center;
+    
+  }
+  .sort_by{
+    width: 153px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    align-items: center;    
+  }
+  .show{
+    width: 119px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .sort_t{
+    padding-left: 10px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+    text-decoration: none;
+    display: block;
+    border-left: 1px solid #ebebeb;
+    width: 50%;
+  }
   
+.view{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 154px;
+    padding-top: 43px;
+}
+.namber_pages{
+    display: flex;
+    width: 261px;
+    height: 44px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .nomber_p{
+      text-decoration: none;
+      display: block;
+      font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #c4c4c4;
+  }
+  .nomber_p:hover{
+    color: #f16d7f;
+  }
+
+.view_all{
+    width: 150px;
+    height: 44px;
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #ef5b70;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.view_all:hover{
+    box-shadow:  0 0 5px  #ef5b70;
+}
+.view_t{
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #ef5b70;
+    text-align: center;
+}
+
+  .info_shop{
+    height: 341px;
+    background-color: #222224;
+  }
+
+.info_part_shop {
+    display: flex;
+    justify-content: space-between;
+    height: 341px;
+    align-content: center;
+}
+.info_items_shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info_text_shop{
+      margin-top: 30px;
+    text-align: center;
+  }
+  .text_i{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+  }
+  .info_img{
+    width: 46px;
+    height: 42px;
+  }
