@@ -95,6 +95,9 @@ color: #f16d7f;
     letter-spacing: 0.025em;
     color: #f16d7f;
 }
+.black_words{
+    color: #4d4d4d;
+}
 
 .browse{
     width: 88px;
@@ -507,7 +510,7 @@ text-align: center;
   .item_blok:hover .item_pic{
     filter: brightness(50%);
   }
-  .item_blok:hover .buttom_add{
+  .item_blok:hover .button_add{
 display: flex;
   }
   
@@ -520,18 +523,18 @@ display: flex;
     position: relative;
 }
 
-.buttom_box{
+.button_box{
     position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
     top: 30%;
 }
-.item_buttom_add{
+.item_button_add{
 display: block;
 text-decoration: none;
 }
-.buttom_add{
+.button_add{
     width: 123px;
     height: 39px;
     border: 1px solid #FFFFFF;
@@ -541,14 +544,14 @@ text-decoration: none;
     flex-wrap: wrap;
 }
 
-.item_buttom_add{
+.item_button_add{
     margin-top: 0px;
 }
 .img_but{
     width: 23px;
     height: 22px;
 }
-.buttom_add_text{
+.button_add_text{
     font-family: Lato;
     font-size: 13px;
     line-height: 1.2;
@@ -556,7 +559,7 @@ text-decoration: none;
     color: #ffffff;
     padding: 4px;
 }
-.item_buttom_add:hover{
+.item_button_add:hover{
     //background-color: #FFFFFF;
     //color: #000;
     box-shadow: 0 0 8px #ffffff;
@@ -582,7 +585,7 @@ text-decoration: none;
     text-transform: uppercase;
     color: #f16d7f;
 }
-.buttom_sect{
+.button_sect{
     width: auto;
     height: 200px;
     display: flex;
@@ -938,7 +941,6 @@ font-weight: 700;
       width: -webkit-fill-available;
       flex-wrap: wrap;
     
-  
   }
   .settings{
       display: flex;
@@ -1116,3 +1118,139 @@ font-weight: 700;
     width: 46px;
     height: 42px;
   }
+  .singl_description{
+      width: 100%;
+      height: 760px;
+      position: relative;
+  }
+.singl_box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 777px;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;  
+}
+.jump_button{
+    display: flex;
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.14);
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.singl_but_box{
+    display: flex;
+    align-items: center;
+}
+.product_description{
+    position: absolute;
+    width: 1141px;
+    height: 730px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin-left: -575px;
+    left: 50%;
+    top: -80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.description_box{
+    width: 642px;
+    border-bottom: 1px solid #eaeaea;;
+}
+.name_box{
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+    height: fit-content;
+    margin-top: 70px;
+    margin-bottom: 18px;
+}
+.name_box::before{
+    content: "";
+    width: 63px;
+    height: 3px;
+    background-color: #ef5b70;
+    position: absolute;
+    top: 23px;
+    left: 40px;
+}
+.name_t{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #f16d7f;
+}
+.discription_text{
+    margin-top: 67px;
+    font-family: Lato;
+font-size: 14px;
+line-height: 24px;
+font-weight: 300;
+color: #5e5e5e;
+}
+.center{
+    text-align: center;
+}
+.properties{
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.prop_text{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2f2f2f;
+}
+.mat{
+    color: #b9b9b9;
+}
+.price_box{
+    padding: 40px;
+}
+.choose_box{
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+    width: 642px;
+    width: 537px;
+}
+.inp_f{
+    margin-top: 16px;
+    width: 144px;
+height: 35px;
+background-color: #ffffff;
+border: 1px solid #eaeaea;
+}
+.product_button_add_box{
+    margin-top: 28px;
+    width: 537px;
+height: 55px;
+background-color: #ffffff;
+border: 1px solid #ef5b70;
+}
+.product_button_add{
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ef5b70;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: inherit;
+}
+.product_button_add:hover{
+    box-shadow:  0 0 8px  #ef5b70;
+}
