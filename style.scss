@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+@import url(_vars.scss);
+
 @font-face {
     font-family: 'Lato';
     src: local('Lato Hairline'), local('Lato-Hairline'), url('font/latoregular.woff2') format('woff2'), url('font/latoregular.woff') format('woff'), url('font/latoregular.ttf') format('truetype');
@@ -33,18 +36,24 @@ body{
 .logo{
     display: flex;
 }
-.logo_words{
-    padding-top: 15px;
-    padding-left: 13px;
-    font-family: Lato;
-    font-size: 27px;
-    line-height: 32px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-    color: #222222;
-  
+
+.red_logo_words{
+    font-weight: 900;
+color: $color_red;
+
+    .logo_words{
+        padding-top: 15px;
+        padding-left: 13px;
+        font-family: Lato;
+        font-size: 27px;
+        line-height: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
 }
+
 .text_way{
     font-family: Lato;
 font-size: 14px;
@@ -53,12 +62,9 @@ font-weight: 300;
 text-transform: uppercase;
 color: #636363;
 }
-.red_logo_words{
-    font-weight: 900;
-color: #f16d7f;
-}
+
 .red_words{
-    color:#F16D7F;
+    color:$color_red;
 }
 .h1{
     font-size: 60px;
@@ -76,7 +82,7 @@ color: #f16d7f;
     line-height: 20px;
     font-weight: 900;
     text-transform: uppercase;
-    color: #f16d7f;
+    color: $color_red;
 }
 .h5{
     margin-bottom: 20px;
@@ -93,7 +99,7 @@ color: #f16d7f;
     line-height: 26px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: #f16d7f;
+    color: $color_red;
 }
 .black_words{
     color: #4d4d4d;
@@ -199,7 +205,7 @@ display: block;
     padding-left: 8px;
 }
 .basket_linc:hover{
-    color: #F16D7F;
+    color: $color_red;
 }
 .basket_button1{
     margin: 5px 0;
@@ -222,12 +228,12 @@ display: block;
     border: none;
     border-radius: 0ch;
     color:#fff;
-    background-color: #F16D7F;
+    background-color: $color_red;
 }
 .basket_button2:hover{
-    color:#F16D7F;
+    color:$color_red;
     background-color: #FFFFFF;
-    border: solid 1px #F16D7F;
+    border: solid 1px $color_red;
 }
 .basket_box::before{
     content: "";
@@ -248,11 +254,11 @@ display: block;
     width: 131px;
     height: 38px;
     font-family: Lato;
-    background-color: #F16D7F;
+    background-color: $color_red;
     border: 0;
     color: #FFFFFF;
     text-decoration: none;
-    border: 1px solid #F16D7F;
+    border: 1px solid $color_red;
     border-radius: 3px;
     
 }
@@ -264,8 +270,8 @@ display: block;
 }
 .my_account:hover{
     background-color: #FFFFFF;
-    color: #F16D7F;
-    border: 1px solid #F16D7F;
+    color: $color_red;
+    border: 1px solid $color_red;
 }
 .navigetion{
     background-color: #FFFFFF;
@@ -356,7 +362,7 @@ margin-right: 0;
     padding-left: 8px;
 }
 .mega_linc:hover{
-    color: #F16D7F;
+    color: $color_red;
 }
 .sale_baner{
     width: 230px;
@@ -381,8 +387,8 @@ margin-right: 0;
 .decoration_line{
     margin: 12px 12px 10px 0;
     height: auto;
-    border: solid 6px  #F16D7F;
-    background-color: #F16D7F
+    border: solid 6px  $color_red;
+    background-color: $color_red
 }
 .motto_text{
     width: auto;
@@ -583,7 +589,7 @@ text-decoration: none;
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
-    color: #f16d7f;
+    color: $color_red;
 }
 .button_sect{
     width: auto;
@@ -602,7 +608,7 @@ text-decoration: none;
     width: 212px;
     height: 48px;
     text-decoration: none;
-    background-color: #F16D7F;
+    background-color: $color_red;
     border: 0;
     color: #FFFFFF;
     align-content: center;
@@ -611,8 +617,8 @@ text-decoration: none;
 }
 .browse_b:hover{
     background-color: #FFFFFF;
-    border: 1px solid #F16D7F;
-    color:   #F16D7F;
+    border: 1px solid $color_red;
+    color:   $color_red;
 }
 .info{
     margin-bottom: 97px;
@@ -755,7 +761,7 @@ text-transform: none;
 }
 .subscribe_button{
     width: 104px;
-    background-color: #f16d7f;
+    background-color: $color_red;
     border-radius: 0px 23px 23px 0px;
     border-top-right-radius: 23px;
     border-bottom-right-radius: 23px;
@@ -768,8 +774,8 @@ text-transform: none;
 }
 .subscribe_button:hover{
     background-color:#ffffff;
-    color:#f16d7f;
-    border: 1px solid #f16d7f;
+    color:$color_red;
+    border: 1px solid $color_red;
 }
 .footer_info{
     width: 440px;
@@ -803,7 +809,7 @@ color: #898989;
 text-decoration: none;
 }
 .fo_linc:hover{
-    color: #f16d7f;
+    color: $color_red;
 }
 .bottom{
     background-color: #e6e6e6;
@@ -834,7 +840,7 @@ color: #7a7a7a;
     background-color: #FFFFFF;
 }
 .b_b:hover{
-    background-color: #F16D7F;
+    background-color: $color_red;
 }
 .new_arrivals{
     height: 148px;
@@ -897,7 +903,7 @@ font-weight: 700;
   
   details[open] > summary::after {
     content: '\25B2';
-    color: #ef5b70;
+    color: $color_red;
     position: absolute;
     left: 235px;
     top: 10px;
@@ -910,18 +916,18 @@ font-weight: 700;
     top: 0px;
     width: 0px;
     height: 37px;
-    background-color: #ef5b70;
+    background-color: $color_red;
   }
   
   details[open] > summary::before {
     content: "";
-    color: #ef5b70;
+    color: $color_red;
     position: absolute;
     left: 0px;
     top: 0px;
   }
   details[open] > summary{
-      color: #ef5b70;
+      color: $color_red;
   }
   .cat_linc{
     font-family: Lato;
@@ -933,7 +939,7 @@ font-weight: 700;
     display: block;
   }
   .cat_linc:hover{
-    color: #ef5b70;
+    color: $color_red;
   }
 
   .showcase{
@@ -977,7 +983,7 @@ font-weight: 700;
     padding: 5px;
   }
   .trend_a:hover{
-      color: #f16d7f;
+      color: $color_red;
   }
   .settings_size{
     width: 33%;
@@ -1061,7 +1067,7 @@ font-weight: 700;
     color: #c4c4c4;
   }
   .nomber_p:hover{
-    color: #f16d7f;
+    color: $color_red;
   }
 
 .view_all{
@@ -1069,19 +1075,19 @@ font-weight: 700;
     height: 44px;
     display: block;
     background-color: #ffffff;
-    border: 1px solid #ef5b70;
+    border: 1px solid $color_red;
     border-radius: 3px;
     text-decoration: none;
 }
 .view_all:hover{
-    box-shadow:  0 0 5px  #ef5b70;
+    box-shadow:  0 0 5px  $color_red;
 }
 .view_t{
     font-family: Lato;
     font-size: 16px;
     line-height: 44px;
     font-weight: 700;
-    color: #ef5b70;
+    color: $color_red;
     text-align: center;
 }
 
@@ -1176,7 +1182,7 @@ font-weight: 700;
     content: "";
     width: 63px;
     height: 3px;
-    background-color: #ef5b70;
+    background-color: $color_red;
     position: absolute;
     top: 23px;
     left: 40px;
@@ -1186,7 +1192,7 @@ font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-    color: #f16d7f;
+    color: $color_red;
 }
 .discription_text{
     margin-top: 67px;
@@ -1236,7 +1242,7 @@ border: 1px solid #eaeaea;
     width: 537px;
 height: 55px;
 background-color: #ffffff;
-border: 1px solid #ef5b70;
+border: 1px solid $color_red;
 }
 .product_button_add{
     text-decoration: none;
@@ -1244,7 +1250,7 @@ border: 1px solid #ef5b70;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
-    color: #ef5b70;
+    color: $color_red;
     display: flex;
     align-items: center;
     align-content: center;
@@ -1252,5 +1258,5 @@ border: 1px solid #ef5b70;
     height: inherit;
 }
 .product_button_add:hover{
-    box-shadow:  0 0 8px  #ef5b70;
+    box-shadow:  0 0 8px  $color_red;
 }
