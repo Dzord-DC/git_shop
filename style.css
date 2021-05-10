@@ -1,3 +1,4 @@
+@import url(_vars.scss);
 * {
   margin: 0;
   padding: 0;
@@ -76,7 +77,7 @@ body {
 }
 
 .red_words {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .h1 {
@@ -251,7 +252,7 @@ body {
 }
 
 .basket_linc:hover {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .basket_button1 {
@@ -277,13 +278,13 @@ body {
   border: none;
   border-radius: 0ch;
   color: #fff;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
 }
 
 .basket_button2:hover {
-  color: #F16D7F;
+  color: #f16d7f;
   background-color: #FFFFFF;
-  border: solid 1px #F16D7F;
+  border: solid 1px #f16d7f;
 }
 
 .basket_box::before {
@@ -307,11 +308,11 @@ body {
   width: 131px;
   height: 38px;
   font-family: Lato;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   border: 0;
   color: #FFFFFF;
   text-decoration: none;
-  border: 1px solid #F16D7F;
+  border: 1px solid #f16d7f;
   border-radius: 3px;
 }
 
@@ -324,8 +325,8 @@ body {
 
 .my_account:hover {
   background-color: #FFFFFF;
-  color: #F16D7F;
-  border: 1px solid #F16D7F;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
 }
 
 .navigetion {
@@ -440,7 +441,7 @@ body {
 }
 
 .mega_linc:hover {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .sale_baner {
@@ -476,8 +477,8 @@ body {
 .decoration_line {
   margin: 12px 12px 10px 0;
   height: auto;
-  border: solid 6px  #F16D7F;
-  background-color: #F16D7F;
+  border: solid 6px #f16d7f;
+  background-color: #f16d7f;
 }
 
 .motto_text {
@@ -771,7 +772,7 @@ body {
   width: 212px;
   height: 48px;
   text-decoration: none;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   border: 0;
   color: #FFFFFF;
   -ms-flex-line-pack: center;
@@ -785,8 +786,8 @@ body {
 
 .browse_b:hover {
   background-color: #FFFFFF;
-  border: 1px solid #F16D7F;
-  color: #F16D7F;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
 }
 
 .info {
@@ -1083,7 +1084,7 @@ body {
 }
 
 .b_b:hover {
-  background-color: #F16D7F;
+  background-color: #f16d7f;
 }
 
 .new_arrivals {
@@ -1166,7 +1167,7 @@ summary::after {
 
 details[open] > summary::after {
   content: '\25B2';
-  color: #ef5b70;
+  color: #f16d7f;
   position: absolute;
   left: 235px;
   top: 10px;
@@ -1180,19 +1181,19 @@ summary::before {
   top: 0px;
   width: 0px;
   height: 37px;
-  background-color: #ef5b70;
+  background-color: #f16d7f;
 }
 
 details[open] > summary::before {
   content: "";
-  color: #ef5b70;
+  color: #f16d7f;
   position: absolute;
   left: 0px;
   top: 0px;
 }
 
 details[open] > summary {
-  color: #ef5b70;
+  color: #f16d7f;
 }
 
 .cat_linc {
@@ -1206,7 +1207,7 @@ details[open] > summary {
 }
 
 .cat_linc:hover {
-  color: #ef5b70;
+  color: #f16d7f;
 }
 
 .showcase {
@@ -1386,14 +1387,14 @@ details[open] > summary {
   height: 44px;
   display: block;
   background-color: #ffffff;
-  border: 1px solid #ef5b70;
+  border: 1px solid #f16d7f;
   border-radius: 3px;
   text-decoration: none;
 }
 
 .view_all:hover {
-  -webkit-box-shadow: 0 0 5px  #ef5b70;
-          box-shadow: 0 0 5px  #ef5b70;
+  -webkit-box-shadow: 0 0 5px #f16d7f;
+          box-shadow: 0 0 5px #f16d7f;
 }
 
 .view_t {
@@ -1401,7 +1402,7 @@ details[open] > summary {
   font-size: 16px;
   line-height: 44px;
   font-weight: 700;
-  color: #ef5b70;
+  color: #f16d7f;
   text-align: center;
 }
 
@@ -1545,7 +1546,7 @@ details[open] > summary {
   content: "";
   width: 63px;
   height: 3px;
-  background-color: #ef5b70;
+  background-color: #f16d7f;
   position: absolute;
   top: 23px;
   left: 40px;
@@ -1623,7 +1624,7 @@ details[open] > summary {
   width: 537px;
   height: 55px;
   background-color: #ffffff;
-  border: 1px solid #ef5b70;
+  border: 1px solid #f16d7f;
 }
 
 .product_button_add {
@@ -1632,7 +1633,7 @@ details[open] > summary {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
-  color: #ef5b70;
+  color: #f16d7f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1648,7 +1649,7 @@ details[open] > summary {
 }
 
 .product_button_add:hover {
-  -webkit-box-shadow: 0 0 8px  #ef5b70;
-          box-shadow: 0 0 8px  #ef5b70;
+  -webkit-box-shadow: 0 0 8px #f16d7f;
+          box-shadow: 0 0 8px #f16d7f;
 }
 /*# sourceMappingURL=style.css.map */
