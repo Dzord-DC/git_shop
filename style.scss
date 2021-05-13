@@ -3,7 +3,9 @@
     padding: 0;
 }
 
+
 @import url(_vars.scss);
+$color_red: #f16d7f;
 
 @font-face {
     font-family: 'Lato';
@@ -39,19 +41,20 @@ body{
 
 .red_logo_words{
     font-weight: 900;
-color: $color_red;
+    color: $color_red;
 
-    .logo_words{
-        padding-top: 15px;
-        padding-left: 13px;
-        font-family: Lato;
-        font-size: 27px;
-        line-height: 32px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.025em;
-        color: #222222;
-    }
+   
+}
+.logo_words{
+    padding-top: 15px;
+    padding-left: 13px;
+    font-family: Lato;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
 }
 
 .text_way{
@@ -1259,4 +1262,32 @@ border: 1px solid $color_red;
 }
 .product_button_add:hover{
     box-shadow:  0 0 8px  $color_red;
+}
+.cart_box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.cart_mark{
+   
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    height: 53px;
+}
+.cart_product{
+    height: 162px;
+}
+.cart_blok{
+    display: flex;
+    align-items: center;
+}
+.cart_font{
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    color: #222222;
 }
