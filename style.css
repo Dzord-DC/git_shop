@@ -44,10 +44,22 @@ body {
   display: flex;
 }
 
+.logo-img {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.logo:hover .logo-img {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .red_logo_words {
@@ -314,6 +326,8 @@ body {
   text-decoration: none;
   border: 1px solid #f16d7f;
   border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .title {
@@ -509,25 +523,25 @@ body {
 }
 
 .parts_a:hover .part_men {
-  opacity: 0.8;
+  background-size: 800px;
   -webkit-box-shadow: 0 0 8px #000;
           box-shadow: 0 0 8px #000;
 }
 
 .parts_a:hover .part_accesories {
-  opacity: 0.8;
+  background-size: 560px;
   -webkit-box-shadow: 0 0 8px #000;
           box-shadow: 0 0 8px #000;
 }
 
 .parts_a:hover .part_women {
-  opacity: 0.8;
+  background-size: 560px;
   -webkit-box-shadow: 0 0 8px #000;
           box-shadow: 0 0 8px #000;
 }
 
 .parts_a:hover .part_kids {
-  opacity: 0.8;
+  background-size: 560px;
   -webkit-box-shadow: 0 0 8px #000;
           box-shadow: 0 0 8px #000;
 }
@@ -561,6 +575,9 @@ body {
   height: 542px;
   background-image: url(img/layer1.png);
   position: relative;
+  background-size: 860px;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
 }
 
 .part_accesories {
@@ -568,6 +585,9 @@ body {
   height: 261px;
   background-image: url(img/layer3.png);
   position: relative;
+  background-size: 600px;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
 }
 
 .part_women {
@@ -576,6 +596,9 @@ body {
   height: 261px;
   background-image: url(img/layer2.png);
   position: relative;
+  background-size: 620px;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
 }
 
 .part_kids {
@@ -583,6 +606,9 @@ body {
   height: 542px;
   background-image: url(img/layer4.png);
   position: relative;
+  background-size: 620px;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
 }
 
 .market {
@@ -627,6 +653,15 @@ body {
   width: 261px;
   height: 356px;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.item_pic {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .item_cart {
@@ -703,6 +738,8 @@ body {
 
 .item_button_add {
   margin-top: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .img_but {
@@ -782,6 +819,9 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #f16d7f;
 }
 
 .browse_b:hover {
@@ -808,6 +848,9 @@ body {
   width: 767px;
   height: 529px;
   background-image: url(img/banner.png);
+  background-size: 767px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .dimming {
@@ -815,6 +858,10 @@ body {
   width: 767px;
   height: 529px;
   background-image: url(img/dimming.png);
+}
+
+.banner_img:hover {
+  background-size: 797px;
 }
 
 .banner_img:hover .dimming {

@@ -35,10 +35,16 @@ body{
 .cap_left{
     display: flex;
 }
+.logo-img{
+    transform: rotate(0);
+    transition: 1s;
+}
 .logo{
     display: flex;
 }
-
+.logo:hover .logo-img{
+    transform: rotate(360deg);
+}
 .red_logo_words{
     font-weight: 900;
     color: $color_red;
@@ -263,7 +269,7 @@ display: block;
     text-decoration: none;
     border: 1px solid $color_red;
     border-radius: 3px;
-    
+    transition: 0.3s;
 }
 .title{
     line-height:38px;
@@ -412,21 +418,21 @@ margin-right: 0;
     display: block;
 }
 .parts_a:hover .part_men{
-    opacity: 0.8;
+    background-size: 800px;
     box-shadow: 0 0 8px #000;
 }
 .parts_a:hover .part_accesories{
-    opacity: 0.8;
+    background-size: 560px;
     box-shadow: 0 0 8px #000;
 
 }
 .parts_a:hover .part_women{
-    opacity: 0.8;
+    background-size: 560px;
     box-shadow: 0 0 8px #000;
 
 }
 .parts_a:hover .part_kids{
-    opacity: 0.8;
+    background-size: 560px;
     box-shadow: 0 0 8px #000;
 
 }
@@ -453,12 +459,16 @@ color: #222222;
     height: 542px;
     background-image: url(img/layer1.png);
     position: relative;
+    background-size: 860px;
+    transition: background-size 1s;
 }
 .part_accesories{
     width: 560px;
     height: 261px;
     background-image: url(img/layer3.png);
     position: relative;
+    background-size: 600px;
+    transition: background-size 1s;
 }
 .part_women{
     margin-bottom: 20px;
@@ -466,12 +476,16 @@ color: #222222;
     height: 261px;
     background-image: url(img/layer2.png);
     position: relative;
+    background-size: 620px;
+    transition: background-size 1s;
 }
 .part_kids{
     width: 560px;
     height: 542px;
     background-image: url(img/layer4.png);
     position: relative;
+    background-size: 620px;
+    transition: background-size 1s;
 }
 .market{
     margin-top: 100px;
@@ -504,7 +518,12 @@ text-align: center;
     width: 261px;
     height: 356px;
     position: relative;
+    transition: 0.3s;
 }
+.item_pic{
+    filter: brightness(100%);
+    transition: 0.3s;
+  }
 
 .item_cart{
     display: block;
@@ -555,6 +574,7 @@ text-decoration: none;
 
 .item_button_add{
     margin-top: 0px;
+    transition: 0.3s;
 }
 .img_but{
     width: 23px;
@@ -617,6 +637,8 @@ text-decoration: none;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    transition: 0.3s;
+    border: 1px solid #f16d7f;
 }
 .browse_b:hover{
     background-color: #FFFFFF;
@@ -635,14 +657,19 @@ text-decoration: none;
 .banner_img{
     position: relative;
     width: 767px;
-height: 529px;
+    height: 529px;
     background-image: url(img/banner.png);
+    background-size: 767px;
+    transition: 0.3s;
 }
 .dimming{
     display: none;
     width: 767px;
-height: 529px;
+    height: 529px;
     background-image: url(img/dimming.png);
+}
+.banner_img:hover{
+    background-size: 797px;
 }
 .banner_img:hover .dimming{
     display: flex;
