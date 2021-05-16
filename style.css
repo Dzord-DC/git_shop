@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(_vars.scss);
 * {
   margin: 0;
@@ -1153,21 +1154,6 @@ body {
   height: 146px;
 }
 
-.checklist {
-  padding-left: 18px;
-  width: 243px;
-  height: 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border-bottom: 1px solid #e6e6e6;
-  position: relative;
-}
-
 .checklist:hover {
   -webkit-box-shadow: 0 0 5px #222222;
           box-shadow: 0 0 5px #222222;
@@ -1188,23 +1174,32 @@ body {
   margin: auto 11px;
 }
 
-summary {
+.checklist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
   font-family: Lato;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 300;
   text-transform: uppercase;
   color: #636363;
-  display: block;
-  line-height: 20px;
   font-weight: 700;
+  padding: 0 0 0 18px;
+  width: 243px;
+  height: 36px;
 }
 
-summary::-webkit-details-marker {
+.checklist::-webkit-details-marker {
   display: none;
 }
 
-summary::after {
+.checklist::after {
   content: '\25BC';
   padding-right: 0.5em;
   position: absolute;
@@ -1212,7 +1207,7 @@ summary::after {
   top: 10px;
 }
 
-details[open] > summary::after {
+.list[open] > .checklist::after {
   content: '\25B2';
   color: #f16d7f;
   position: absolute;
@@ -1220,7 +1215,7 @@ details[open] > summary::after {
   top: 10px;
 }
 
-summary::before {
+.checklist::before {
   content: "";
   padding-right: 0.5em;
   position: absolute;
@@ -1231,7 +1226,7 @@ summary::before {
   background-color: #f16d7f;
 }
 
-details[open] > summary::before {
+.list[open] > .checklist::before {
   content: "";
   color: #f16d7f;
   position: absolute;
@@ -1239,7 +1234,7 @@ details[open] > summary::before {
   top: 0px;
 }
 
-details[open] > summary {
+.list[open] > .checklist {
   color: #f16d7f;
 }
 
@@ -1925,5 +1920,92 @@ details[open] > summary {
 
 .cart-form-box_center {
   margin-top: 17px;
+}
+
+.checkout {
+  margin: 89px 0;
+}
+
+.checkout-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.checkout-box-form {
+  width: 45%;
+  padding: 30px 27px;
+}
+
+.check-details {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.check-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  padding: 33px 0;
+}
+
+.check-summary:hover {
+  -webkit-box-shadow: 0 0 5px #2f2f2f;
+          box-shadow: 0 0 5px #2f2f2f;
+}
+
+.check-summary::-webkit-details-marker {
+  display: none;
+}
+
+.form_marg {
+  margin: 15px 0;
+}
+
+.form-ul {
+  list-style-type: none;
+}
+
+.form-li::before {
+  content: '»';
+}
+
+.font_app {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.font_dune {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+
+.check-submit_value {
+  margin: 35px 0;
+  width: 180px;
+  height: 50px;
+  font-size: 14px;
+}
+
+.regist-input {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.red-text {
+  color: #ff0d0d;
 }
 /*# sourceMappingURL=style.css.map */
