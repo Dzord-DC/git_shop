@@ -113,15 +113,43 @@ color: #636363;
 .black_words{
     color: #4d4d4d;
 }
-
+.browse-polygon{
+    position: relative;
+}
 .browse{
+    display: flex;
     width: 88px;
-    height: 39px;
+    height: 37px;
     font-size: 14px;
     padding: 0px 0px;
     border-radius: 0;
-    border: solid 2px;
+    border: solid 1px;
     border-color: #E8E8E8;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8E8E8;
+    border-radius: 3px 0px 0px 3px;
+}
+.browse-box{
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    position: absolute;
+    padding: 10px;
+    display: none;
+    top: 38px;
+    z-index: 1;
+    flex-direction: column;
+}
+.browse-item{
+display: block;
+}
+.browse:hover {
+    background-color: #FFFFFF;
+}
+.browse-polygon:hover .browse-box{
+    display: flex;
+
 }
 .arroun{
     font: #838383;
@@ -140,9 +168,9 @@ color: #636363;
     width: 278px;
     height: 35px;
     font-size: 14px;
-    padding: 0px 0px;
+    padding: 1px 10px;
     border-radius: 0;
-    border: solid 2px;
+    border: solid 1px;
     border-color: #E8E8E8;
 }
 .search_button{
@@ -150,12 +178,12 @@ color: #636363;
     height: 39px;
     font-size: 14px;
     padding: 0px 0px;
-    border-radius: 0;
-    border: solid 2px;
-    border-color: #E8E8E8;
+    border-radius: 0 3px 3px 0;
+    border: solid 1px #E8E8E8;
+    background-color: #FFFFFF;
 }
 .search_button:hover{
-    background-color: #FFFFFF;
+    background-color: #E8E8E8;
 }
 .acsess{
     display: flex;
@@ -217,13 +245,19 @@ display: block;
     color: $color_red;
 }
 .basket_button1{
+    display: flex;
+    border: solid 1px #008000;
     margin: 5px 0;
-    width: 235px;
-    height: 50px;
-    border: none;
+    width: 234px;
+    height: 49px;
     border-radius: 0ch;
-    color:#fff;
+    color: #fff;
     background-color: #008000;
+    align-items: center;
+    justify-content: center;
+    background-color: #008000;
+    font-size: 16px;
+    transition: 0.3s;
 }
 .basket_button1:hover{
     color:#008000;
@@ -270,6 +304,11 @@ display: block;
     border: 1px solid $color_red;
     border-radius: 3px;
     transition: 0.3s;
+    position: relative;
+}
+.browse-box__ac{
+    top: 75px;
+    width: 112px;
 }
 .title{
     line-height:38px;
@@ -281,6 +320,9 @@ display: block;
     background-color: #FFFFFF;
     color: $color_red;
     border: 1px solid $color_red;
+}
+.account:hover .browse-box{
+    display: flex;
 }
 .navigetion{
     background-color: #FFFFFF;
@@ -735,6 +777,8 @@ background-color: rgba(242,242,242,0.5);
     padding: 172px 20px;
     display: flex;
     border-right:1px solid #ffffff ;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .user_foto{
     margin-right: 30px;
@@ -750,6 +794,10 @@ font-weight: 400;
 font-style: italic;
 letter-spacing: 0.025em;
 color: #222224;
+}
+.user_name{
+display: block;
+margin: 0 0 0 114px;
 }
 .text_subscribe{
     align-content: center;
@@ -801,6 +849,7 @@ text-transform: none;
     letter-spacing: 0.025em;
     color: #ffffff;
     border: none;
+    transition: 0.3s;
 }
 .subscribe_button:hover{
     background-color:#ffffff;
@@ -863,13 +912,20 @@ color: #7a7a7a;
 .bottom_buttons{
     display: flex;
 }
-.b_b{
+.item_m{
+    display: flex;
     margin: 10px;
     width: 32px;
     height: 32px;
     background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    color: #b2b2b2;
+    transition: 0.3s;
 }
-.b_b:hover{
+
+.item_m:hover{
+    color: #FFFFFF;
     background-color: $color_red;
 }
 .new_arrivals{
@@ -1342,16 +1398,24 @@ border: 1px solid $color_red;
     color: #6f6e6e;
 }
 .cart-quantity-input{
-    width: 54px;
+    width: 50px;
     height: 30px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
+    padding: 0 5px;
 }
 .cart-mark_marg{
     margin: 44px 0;
 }
 .cart-mark_border{
     border: none;
+}
+.button_delet{
+    color: #b3b2b2;
+    display: flex;
+}
+.button_delet:hover{
+    color: $color_red;
 }
 .cart-button{
     width: 225px;
