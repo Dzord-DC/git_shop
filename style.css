@@ -16,6 +16,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Lato-Black, AdobeInvisFont, MyriadPro-Regular;
 }
 
+input {
+  outline: none;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -496,6 +500,17 @@ body {
   height: -moz-min-content;
   height: min-content;
   margin-right: 46px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu_item:last-of-type {
@@ -1780,11 +1795,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product_button_add:hover {
-  -webkit-box-shadow: 0 0 8px #f16d7f;
-          box-shadow: 0 0 8px #f16d7f;
+  background-color: #f16d7f;
+  color: #FFFFFF;
 }
 
 .cart_box {
@@ -1959,11 +1976,13 @@ body {
   text-transform: uppercase;
   color: #4a4a4a;
   padding: 0 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cart-form-submit:hover {
-  -webkit-box-shadow: 0 0 5px #232323;
-          box-shadow: 0 0 5px #232323;
+  background-color: #f16d7f;
+  color: #ffffff;
 }
 
 .catr-form-text_font {
